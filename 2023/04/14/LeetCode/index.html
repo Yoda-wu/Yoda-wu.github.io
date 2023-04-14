@@ -19,55 +19,56 @@
     <meta name="description" content="哈希快乐数​	编写一个算法来判断一个数 n 是不是快乐数。 「快乐数」 定义为：  对于一个正整数，每一次将该数替换为它每个位置上的数字的平方和。 然后重复这个过程直到这个数变为 1，也可能是 无限循环 但始终变不到 1。 如果这个过程 结果为 1，那么这个数就是快乐数。  如果 n 是 快乐数 就返回 true ；不是，则返回 false 。 示例： 1234567输入：n &#x3D; 19输出：tru">
 <meta property="og:type" content="article">
 <meta property="og:title" content="刷题笔记">
-<meta property="og:url" content="https://yodawu.github.io/2023/04/12/leetcode_recod/index.html">
+<meta property="og:url" content="https://yodawu.github.io/2023/04/14/LeetCode/index.html">
 <meta property="og:site_name" content="Yoda知识宝库">
 <meta property="og:description" content="哈希快乐数​	编写一个算法来判断一个数 n 是不是快乐数。 「快乐数」 定义为：  对于一个正整数，每一次将该数替换为它每个位置上的数字的平方和。 然后重复这个过程直到这个数变为 1，也可能是 无限循环 但始终变不到 1。 如果这个过程 结果为 1，那么这个数就是快乐数。  如果 n 是 快乐数 就返回 true ；不是，则返回 false 。 示例： 1234567输入：n &#x3D; 19输出：tru">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://assets.leetcode-cn.com/solution-static/202/202_fig2.png">
-<meta property="og:image" content="https://yodawu.github.io/leetcode_recod.assets/1657986879-DaxDHi-image.png">
-<meta property="og:image" content="https://yodawu.github.io/leetcode_recod.assets/exx1.jpg">
-<meta property="og:image" content="https://assets.leetcode.com/uploads/2020/11/04/word2.jpg">
-<meta property="og:image" content="https://yodawu.github.io/leetcode_recod.assets/grid1.jpg">
-<meta property="og:image" content="https://aliyun-lc-upload.oss-cn-hangzhou.aliyuncs.com/aliyun-lc-upload/uploads/2018/07/25/question_11.jpg">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201124174327597.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2020112917480858.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201123101929791.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201222191924417.png">
-<meta property="og:image" content="https://assets.leetcode.com/uploads/2021/01/18/uniquebstn3.jpg">
-<meta property="og:image" content="https://assets.leetcode.com/uploads/2021/03/10/rob1-tree.jpg">
-<meta property="og:image" content="https://assets.leetcode-cn.com/solution-static/14/14_fig3.png">
-<meta property="og:image" content="https://yodawu.github.io/leetcode_recod.assets/histogram.jpg">
-<meta property="og:image" content="https://yodawu.github.io/leetcode_recod.assets/maximal.jpg">
-<meta property="og:image" content="https://yodawu.github.io/leetcode_recod.assets/aabb1b287134cf950aa80526806ef4025e3920d57d237c0369ed34fae83e2690-image.png">
-<meta property="og:image" content="https://yodawu.github.io/leetcode_recod.assets/max1grid.jpg">
-<meta property="og:image" content="https://assets.leetcode.com/uploads/2020/11/07/search1.jpg">
-<meta property="og:image" content="https://assets.leetcode.com/uploads/2021/02/19/tree.jpg">
-<meta property="og:image" content="https://assets.leetcode.com/uploads/2021/02/14/tree.jpg">
-<meta property="og:image" content="https://yodawu.github.io/leetcode_recod.assets/binarytree.png">
-<meta property="og:image" content="https://yodawu.github.io/leetcode_recod.assets/serdeser.jpg">
-<meta property="og:image" content="https://yodawu.github.io/leetcode_recod.assets/flaten.jpg">
-<meta property="og:image" content="https://yodawu.github.io/Sophomore%E2%85%A1/%E7%AE%97%E6%B3%95/%E6%88%91%E8%A6%81%E5%8E%BB%E5%AD%97%E8%8A%82.assets/pathsum1.jpg">
-<meta property="og:image" content="https://yodawu.github.io/Sophomore%E2%85%A1/%E7%AE%97%E6%B3%95/%E6%88%91%E8%A6%81%E5%8E%BB%E5%AD%97%E8%8A%82.assets/pathsumii1.jpg">
-<meta property="og:image" content="https://assets.leetcode.com/uploads/2021/04/09/pathsum3-1-tree.jpg">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/202_fig2.png">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/1657986879-DaxDHi-image.png">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/exx1.jpg">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/word2.jpg">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/grid1.jpg">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/question_11.jpg">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/20201124174327597.png">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/2020112917480858.png">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/20201123101929791.png">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/20201222191924417.png">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/uniquebstn3.jpg">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/rob1-tree.jpg">
+<meta property="og:image" content="https://yodawu.github.io/2023/04/14/LeetCode/LeetCode/14_fig3.png">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/histogram.jpg">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/maximal.jpg">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/aabb1b287134cf950aa80526806ef4025e3920d57d237c0369ed34fae83e2690-image.png">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/max1grid.jpg">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/search1.jpg">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/tree.jpg">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/tree2.jpg">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/binarytree.png">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/serdeser.jpg">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/flaten.jpg">
+<meta property="og:image" content="https://yodawu.github.io/2023/04/14/LeetCode/LeetCode/pathsum1.jpg">
+<meta property="og:image" content="https://yodawu.github.io/2023/04/14/LeetCode/LeetCode/pathsumii1.jpg">
+<meta property="og:image" content="https://yodawu.github.io/2023/04/14/LeetCode/LeetCode/pathsum3-1-tree.jpg">
 <meta property="og:image" content="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/11/06/e1.png">
-<meta property="og:image" content="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/11/06/e1.png">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/e1.png">
 <meta property="og:image" content="c:\Users\d1286\AppData\Roaming\Typora\typora-user-images\image-20220715144544716.png">
-<meta property="og:image" content="https://yodawu.github.io/leetcode_recod.assets/942b5358214c819180e73399355adbb888cded.png">
-<meta property="og:image" content="https://yodawu.github.io/Sophomore%E2%85%A1/%E7%AE%97%E6%B3%95/%E6%88%91%E8%A6%81%E5%8E%BB%E5%AD%97%E8%8A%82.assets/c2688293503fa8728ce21981e402a553001cc0.png">
-<meta property="og:image" content="https://yodawu.github.io/Sophomore%E2%85%A1/%E7%AE%97%E6%B3%95/%E6%88%91%E8%A6%81%E5%8E%BB%E5%AD%97%E8%8A%82.assets/13a0272842a4197f3762709aa4db6c6f3fcd9f.png">
-<meta property="og:image" content="https://yodawu.github.io/Sophomore%E2%85%A1/%E7%AE%97%E6%B3%95/%E6%88%91%E8%A6%81%E5%8E%BB%E5%AD%97%E8%8A%82.assets/349a80a0187cefe9a99253974e47b3e7536d6f.png">
-<meta property="og:image" content="https://yodawu.github.io/leetcode_recod.assets/813308fd0280b523c3397a53c5a91d7d.png">
-<meta property="og:image" content="https://ask.qcloudimg.com/http-save/yehe-2823867/2q05hsflfa.jpeg">
-<meta property="og:image" content="https://guide-blog-images.oss-cn-shenzhen.aliyuncs.com/github/javaguide/01.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/img_convert/0c9f470819684156cfdc27c682db4def.png">
-<meta property="og:image" content="https://camo.githubusercontent.com/790654187401ebbe3f8b7b5c25abc4e234b13a5fde546963d201e2092e964a25/68747470733a2f2f63732d6e6f7465732d313235363130393739362e636f732e61702d6775616e677a686f752e6d7971636c6f75642e636f6d2f66383761666537322d633264662d346331322d616330332d3962386435383161386166382e6a7067">
-<meta property="og:image" content="https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019/7/%E7%8A%B6%E6%80%81%E7%A0%81.png">
-<meta property="og:image" content="https://yodawu.github.io/leetcode_recod.assets/603212-d82f0ca8d86acf1f.png">
-<meta property="article:published_time" content="2023-04-12T05:03:02.915Z">
-<meta property="article:modified_time" content="2023-04-12T05:04:16.947Z">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/942b5358214c819180e73399355adbb888cded.png">
+<meta property="og:image" content="https://yodawu.github.io/2023/04/14/LeetCode/LeetCode/c2688293503fa8728ce21981e402a553001cc0.png">
+<meta property="og:image" content="https://yodawu.github.io/2023/04/14/LeetCode/LeetCode/13a0272842a4197f3762709aa4db6c6f3fcd9f.png">
+<meta property="og:image" content="https://yodawu.github.io/2023/04/14/LeetCode/LeetCode/349a80a0187cefe9a99253974e47b3e7536d6f.png">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/813308fd0280b523c3397a53c5a91d7d.png">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/2q05hsflfa.jpeg">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/01.png">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/0c9f470819684156cfdc27c682db4def.png">
+<meta property="og:image" content="https://yodawu.github.io/2023/04/14/LeetCode/LeetCode/68747470733a2f2f63732d6e6f7465732d313235363130393739362e636f732e61702d6775616e677a686f752e6d7971636c6f75642e636f6d2f66383761666537322d633264662d346331322d616330332d3962386435383161386166382e6a7067">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/%E7%8A%B6%E6%80%81%E7%A0%81.png">
+<meta property="og:image" content="https://yodawu.github.io/LeetCode/603212-d82f0ca8d86acf1f.png">
+<meta property="article:published_time" content="2023-04-14T03:40:23.000Z">
+<meta property="article:modified_time" content="2023-04-14T03:46:37.409Z">
 <meta property="article:author" content="wuyuda">
+<meta property="article:tag" content="算法，数据结构">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://assets.leetcode-cn.com/solution-static/202/202_fig2.png">
+<meta name="twitter:image" content="https://yodawu.github.io/LeetCode/202_fig2.png">
   
   
   
@@ -248,8 +249,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-04-12 13:03" pubdate>
-          2023年4月12日 下午
+        <time datetime="2023-04-14 11:40" pubdate>
+          2023年4月14日 中午
         </time>
       </span>
     
@@ -260,7 +261,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          201k 字
+          202k 字
         
       </span>
     
@@ -271,7 +272,7 @@
         
         
         
-          1674 分钟
+          1681 分钟
         
       </span>
     
@@ -338,7 +339,7 @@
 <p>出现循环的数，可以联想到环行链表，那么我们可以使用快慢指针来解决。</p>
 <p>如果没有出现循环，即快指针最后指向的是1，那么1的平方和也是1。</p>
 <p>如果出现循环，那么快慢指针会相遇。</p>
-<p><img src="https://assets.leetcode-cn.com/solution-static/202/202_fig2.png" srcset="/img/loading.gif" lazyload alt="fig2"></p>
+<p><img src="/LeetCode/202_fig2.png" srcset="/img/loading.gif" lazyload alt="fig2"></p>
 </blockquote>
 <p>代码：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-type">boolean</span> <span class="hljs-title function_">isHappy</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span> &#123;<br>        <span class="hljs-type">int</span> fast=n;<br>        <span class="hljs-type">int</span> slow=n;<br>        <span class="hljs-keyword">do</span>&#123;<br>            slow=squareSum(slow);<br>            fast=squareSum(fast);<br>            fast=squareSum(fast);<br>        &#125;<span class="hljs-keyword">while</span>(slow!=fast);<br>        <span class="hljs-keyword">if</span>(fast==<span class="hljs-number">1</span>)<br>            <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;<br>        <span class="hljs-keyword">else</span> <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;<br>    &#125;<br>    <br>    <span class="hljs-keyword">private</span> <span class="hljs-type">int</span> <span class="hljs-title function_">squareSum</span><span class="hljs-params">(<span class="hljs-type">int</span> m)</span>&#123;<br>        <span class="hljs-type">int</span> squaresum=<span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">while</span>(m!=<span class="hljs-number">0</span>)&#123;<br>           squaresum+=(m%<span class="hljs-number">10</span>)*(m%<span class="hljs-number">10</span>);<br>            m/=<span class="hljs-number">10</span>;<br>        &#125;<br>        <span class="hljs-keyword">return</span> squaresum;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
@@ -491,7 +492,7 @@
 <p>在这种情况下，有向图必然由一个或多个环组成。我们可以遍历 nums，找到节点个数最大的环。</p>
 <p>代码实现时需要用一个vis 数组来标记访问过的节点。</p>
 <p>或者使用标记法，如果访问过的数就标记为-1，这样可以减少空间复杂度。</p>
-<p><img src="/leetcode_recod.assets/1657986879-DaxDHi-image.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<p><img src="/LeetCode/1657986879-DaxDHi-image.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 </blockquote>
 <p>代码：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">arrayNesting</span><span class="hljs-params">(<span class="hljs-type">int</span>[] nums)</span> &#123;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">ans</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>, n = nums.length;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; n; i++)&#123;<br>            <span class="hljs-type">int</span> <span class="hljs-variable">cnt</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;<br>            <span class="hljs-keyword">while</span>(nums[i]!= -<span class="hljs-number">1</span> )&#123;<br>                <span class="hljs-type">int</span> <span class="hljs-variable">tmp</span> <span class="hljs-operator">=</span> nums[i];<br>                nums[i] = -<span class="hljs-number">1</span>;<br>                i = tmp;<br>                cnt++;<br>            &#125;<br>            ans = Math.max(ans,cnt);<br>        &#125;<br>        <span class="hljs-keyword">return</span> ans;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
@@ -1156,13 +1157,13 @@
 <h3 id="二叉树中的最大路径和-字节hard"><a href="#二叉树中的最大路径和-字节hard" class="headerlink" title="二叉树中的最大路径和 [字节hard]"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/binary-tree-maximum-path-sum/">二叉树中的最大路径和</a> [字节hard]</h3><p>路径 被定义为一条从树中任意节点出发，沿父节点-子节点连接，达到任意节点的序列。同一个节点在一条路径序列中 至多出现一次 。该路径 至少包含一个 节点，且不一定经过根节点。</p>
 <p>路径和 是路径中各节点值的总和。</p>
 <p>给你一个二叉树的根节点 root ，返回其 最大路径和 。</p>
-<p><img src="/leetcode_recod.assets/exx1.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="/LeetCode/exx1.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
 <figure class="highlight tap"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs tap">输入：root = [1,2,3]<br>输出：6<br>解释：最优路径是<span class="hljs-number"> 2 </span>-&gt;<span class="hljs-number"> 1 </span>-&gt;<span class="hljs-number"> 3 </span>，路径和为<span class="hljs-number"> 2 </span>+<span class="hljs-number"> 1 </span>+<span class="hljs-number"> 3 </span>= 6<br></code></pre></td></tr></table></figure>
 
 <blockquote>
 <p>本题可以从任意的节点出发，到达任意节点，求这条路径的最大值。</p>
 <p>其实我们可以把这个二叉树情况进行分解：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css">  <span class="hljs-selector-tag">a</span><br> / \<br><span class="hljs-selector-tag">b</span>   c<br></code></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><span class="hljs-selector-tag">a</span><br>/ \<br><span class="hljs-selector-tag">b</span>   c<br></code></pre></td></tr></table></figure>
 
 <p>路径和的情况有以下几种：</p>
 <ol>
@@ -1212,7 +1213,7 @@
 
 
 <h3 id="复原-IP-地址-字节medium"><a href="#复原-IP-地址-字节medium" class="headerlink" title="复原 IP 地址 [字节medium]"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/restore-ip-addresses/">复原 IP 地址</a> [字节medium]</h3><p>有效 IP 地址 正好由四个整数（每个整数位于 0 到 255 之间组成，且不能含有前导 0），整数之间用 ‘.’ 分隔。</p>
-<p>例如：”0.1.2.201” 和 “192.168.1.1” 是 有效 IP 地址，但是 “0.011.255.245”、”192.168.1.312” 和 “<a href="mailto:&#49;&#x39;&#50;&#x2e;&#x31;&#54;&#x38;&#64;&#49;&#x2e;&#49;">&#49;&#x39;&#50;&#x2e;&#x31;&#54;&#x38;&#64;&#49;&#x2e;&#49;</a>“ 是 无效 IP 地址。<br>给定一个只包含数字的字符串 s ，用以表示一个 IP 地址，返回所有可能的有效 IP 地址，这些地址可以通过在 s 中插入 ‘.’ 来形成。你 不能 重新排序或删除 s 中的任何数字。你可以按 任何 顺序返回答案。</p>
+<p>例如：”0.1.2.201” 和 “192.168.1.1” 是 有效 IP 地址，但是 “0.011.255.245”、”192.168.1.312” 和 “<a href="mailto:&#x31;&#x39;&#x32;&#x2e;&#x31;&#54;&#x38;&#64;&#x31;&#46;&#x31;">&#x31;&#x39;&#x32;&#x2e;&#x31;&#54;&#x38;&#64;&#x31;&#46;&#x31;</a>“ 是 无效 IP 地址。<br>给定一个只包含数字的字符串 s ，用以表示一个 IP 地址，返回所有可能的有效 IP 地址，这些地址可以通过在 s 中插入 ‘.’ 来形成。你 不能 重新排序或删除 s 中的任何数字。你可以按 任何 顺序返回答案。</p>
 <p><strong>示例 1：</strong></p>
 <figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs prolog">输入：s = <span class="hljs-string">&quot;25525511135&quot;</span><br>输出：[<span class="hljs-string">&quot;255.255.11.135&quot;</span>,<span class="hljs-string">&quot;255.255.111.35&quot;</span>]<br></code></pre></td></tr></table></figure>
 
@@ -1230,7 +1231,7 @@
 
 <h3 id="单词搜索-字节medium"><a href="#单词搜索-字节medium" class="headerlink" title="单词搜索 [字节medium]"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/word-search/">单词搜索</a> [字节medium]</h3><p>给定一个 m x n 二维字符网格 board 和一个字符串单词 word 。如果 word 存在于网格中，返回 true ；否则，返回 false 。</p>
 <p>单词必须按照字母顺序，通过相邻的单元格内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母不允许被重复使用。</p>
-<p><img src="https://assets.leetcode.com/uploads/2020/11/04/word2.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="/LeetCode/word2.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
 <figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs prolog">输入：board = [[<span class="hljs-string">&quot;A&quot;</span>,<span class="hljs-string">&quot;B&quot;</span>,<span class="hljs-string">&quot;C&quot;</span>,<span class="hljs-string">&quot;E&quot;</span>],[<span class="hljs-string">&quot;S&quot;</span>,<span class="hljs-string">&quot;F&quot;</span>,<span class="hljs-string">&quot;C&quot;</span>,<span class="hljs-string">&quot;S&quot;</span>],[<span class="hljs-string">&quot;A&quot;</span>,<span class="hljs-string">&quot;D&quot;</span>,<span class="hljs-string">&quot;E&quot;</span>,<span class="hljs-string">&quot;E&quot;</span>]], word = <span class="hljs-string">&quot;ABCCED&quot;</span><br>输出：true<br><br></code></pre></td></tr></table></figure>
 
 <blockquote>
@@ -1285,7 +1286,7 @@
 <h3 id="矩阵中的最长递增路径-字节hard"><a href="#矩阵中的最长递增路径-字节hard" class="headerlink" title="矩阵中的最长递增路径 [字节hard]"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/longest-increasing-path-in-a-matrix/">矩阵中的最长递增路径</a> [字节hard]</h3><p>给定一个 m x n 整数矩阵 matrix ，找出其中 最长递增路径 的长度。</p>
 <p>对于每个单元格，你可以往上，下，左，右四个方向移动。 你 不能 在 对角线 方向上移动或移动到 边界外（即不允许环绕）。</p>
 <p><strong>示例 1：</strong></p>
-<p><img src="/leetcode_recod.assets/grid1.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="/LeetCode/grid1.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
 <figure class="highlight inform7"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs inform7">输入：matrix = <span class="hljs-comment">[<span class="hljs-comment">[9,9,4]</span>,<span class="hljs-comment">[6,6,8]</span>,<span class="hljs-comment">[2,1,1]</span>]</span><br>输出：4 <br>解释：最长递增路径为 <span class="hljs-comment">[1, 2, 6, 9]</span>。<br></code></pre></td></tr></table></figure>
 
 <blockquote>
@@ -1379,7 +1380,7 @@
 <p>返回容器可以储存的最大水量。</p>
 <p><strong>说明：</strong>你不能倾斜容器。</p>
 <p><strong>示例 1：</strong></p>
-<p><img src="https://aliyun-lc-upload.oss-cn-hangzhou.aliyuncs.com/aliyun-lc-upload/uploads/2018/07/25/question_11.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="/LeetCode/question_11.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
 <figure class="highlight dns"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs dns">输入：[<span class="hljs-number">1,8,6,2</span>,<span class="hljs-number">5,4,8,3</span>,<span class="hljs-number">7</span>]<br>输出：<span class="hljs-number">49</span> <br>解释：图中垂直线代表输入数组 [<span class="hljs-number">1,8,6,2</span>,<span class="hljs-number">5,4,8,3</span>,<span class="hljs-number">7</span>]。在此情况下，容器能够容纳水（表示为蓝色部分）的最大值为 <span class="hljs-number">49</span>。<br></code></pre></td></tr></table></figure>
 
 <p><strong>示例 2：</strong></p>
@@ -1425,7 +1426,7 @@
 <li><code>0 &lt;= nums[i] &lt;= 1000</code></li>
 </ul>
 <p><strong>进阶：</strong>你能否用 <code>O(n)</code> 时间复杂度完成此题?</p>
-<p><img src="https://img-blog.csdnimg.cn/20201124174327597.png" srcset="/img/loading.gif" lazyload alt="376.摆动序列"></p>
+<p><img src="/LeetCode/20201124174327597.png" srcset="/img/loading.gif" lazyload alt="376.摆动序列"></p>
 <blockquote>
 <p>思路：<br>贪心</p>
 <p><strong>局部最优：删除单调坡度上的节点（不包括单调坡度两端的节点），那么这个坡度就可以有两个局部峰值</strong>。</p>
@@ -1489,7 +1490,7 @@
 <p>实际上这个等式是可以分解的：</p>
 <p><code>prices[3]-prices[0] = prices[3]-prices[2] + (prices[2]-prices[1]) + (prices[1]-prices[0])</code></p>
 <p>等于连续买卖利润之和。</p>
-<p><img src="https://img-blog.csdnimg.cn/2020112917480858.png" srcset="/img/loading.gif" lazyload alt="122.买卖股票的最佳时机II"></p>
+<p><img src="/LeetCode/2020112917480858.png" srcset="/img/loading.gif" lazyload alt="122.买卖股票的最佳时机II"></p>
 <p>所以只收集正利润就是最大的利润</p>
 </blockquote>
 <p>代码：</p>
@@ -1593,7 +1594,7 @@
 <p>思路：</p>
 <p>这题读完之后会发现和合并区间类似，如果气球的区间有重叠的话，那么就用一根弓箭就可以引爆两个气球。</p>
 <p>就是求气球的非交叉区间的个数（因为交叉的区间可以用一根箭引爆）</p>
-<p><img src="https://img-blog.csdnimg.cn/20201123101929791.png" srcset="/img/loading.gif" lazyload alt="452.用最少数量的箭引爆气球"></p>
+<p><img src="/LeetCode/20201123101929791.png" srcset="/img/loading.gif" lazyload alt="452.用最少数量的箭引爆气球"></p>
 <p>弓箭发射的点就是这两个区间的右端点的最小值。</p>
 </blockquote>
 <p>代码：</p>
@@ -1627,7 +1628,7 @@
 <li>统计每一个字符最后出现的位置</li>
 <li>从头遍历字符，并更新字符的最远出现下标，如果找到字符最远出现位置下标和当前下标相等了，则找到了分割点</li>
 </ul>
-<p><img src="https://img-blog.csdnimg.cn/20201222191924417.png" srcset="/img/loading.gif" lazyload alt="763.划分字母区间"></p>
+<p><img src="/LeetCode/20201222191924417.png" srcset="/img/loading.gif" lazyload alt="763.划分字母区间"></p>
 </blockquote>
 <p>代码：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.*;<br><span class="hljs-comment">// @lc code=start</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-keyword">public</span> List&lt;Integer&gt; <span class="hljs-title function_">partitionLabels</span><span class="hljs-params">(String s)</span> &#123;<br>        <span class="hljs-type">int</span>[] hash = <span class="hljs-keyword">new</span> <span class="hljs-title class_">int</span>[<span class="hljs-number">27</span>];<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; s.length(); i++)&#123;<br>            <span class="hljs-type">char</span> <span class="hljs-variable">c</span> <span class="hljs-operator">=</span> s.charAt(i);<br>            hash[c-<span class="hljs-string">&#x27;a&#x27;</span>] = i;<br>        &#125;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">left</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">right</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;<br>        List&lt;Integer&gt; ans = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayList</span>&lt;&gt;();<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span> ; i &lt;s.length(); i++)&#123;<br>            <span class="hljs-type">char</span> <span class="hljs-variable">c</span> <span class="hljs-operator">=</span> s.charAt(i);<br>            right = Math.max(right, hash[c-<span class="hljs-string">&#x27;a&#x27;</span>]);<br>            <span class="hljs-keyword">if</span>(i == right)&#123;<br>                ans.add(right - left + <span class="hljs-number">1</span>);<br>                left = i+<span class="hljs-number">1</span>;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> ans;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
@@ -1660,7 +1661,7 @@
 <h3 id="比特位计数"><a href="#比特位计数" class="headerlink" title="比特位计数"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/counting-bits/">比特位计数</a></h3><p>给你一个整数 n ，对于 0 &lt;&#x3D; i &lt;&#x3D; n 中的每个 i ，计算其二进制表示中 1 的个数 ，返回一个长度为 n + 1 的数组 ans 作为答案。</p>
 <blockquote>
 <p>对于所有的数字，只有两类：</p>
-<p>奇数：二进制表示中，奇数一定比前面那个偶数多一个 1，因为多的就是最低位的 1。<br>       举例：<br>      0 &#x3D; 0       1 &#x3D; 1<br>      2 &#x3D; 10      3 &#x3D; 11<br>偶数：二进制表示中，偶数中 1 的个数一定和除以 2 之后的那个数一样多。因为最低位是 0，除以 2 就是右移一位，也就是把那个 0 抹掉而已，所以 1 的个数是不变的。<br>        举例：<br>       2 &#x3D; 10       4 &#x3D; 100       8 &#x3D; 1000<br>       3 &#x3D; 11       6 &#x3D; 110       12 &#x3D; 1100</p>
+<p>奇数：二进制表示中，奇数一定比前面那个偶数多一个 1，因为多的就是最低位的 1。<br>    举例：<br>   0 &#x3D; 0       1 &#x3D; 1<br>   2 &#x3D; 10      3 &#x3D; 11<br>偶数：二进制表示中，偶数中 1 的个数一定和除以 2 之后的那个数一样多。因为最低位是 0，除以 2 就是右移一位，也就是把那个 0 抹掉而已，所以 1 的个数是不变的。<br>     举例：<br>    2 &#x3D; 10       4 &#x3D; 100       8 &#x3D; 1000<br>    3 &#x3D; 11       6 &#x3D; 110       12 &#x3D; 1100</p>
 </blockquote>
 <p>代码：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span>[] countBits(<span class="hljs-type">int</span> n) &#123;<br>        <span class="hljs-type">int</span>[] res = <span class="hljs-keyword">new</span> <span class="hljs-title class_">int</span>[n+<span class="hljs-number">1</span>];<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">1</span>; i &lt;= n ;i++)&#123;<br>            <span class="hljs-keyword">if</span>(i % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>)&#123;<br>                res[i] = res[i/<span class="hljs-number">2</span>];<br>            &#125;<span class="hljs-keyword">else</span>&#123;<br>                res[i] = res[i-<span class="hljs-number">1</span>] + <span class="hljs-number">1</span>;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> res;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
@@ -1708,7 +1709,7 @@
 
 <h3 id="不同的二叉搜索树"><a href="#不同的二叉搜索树" class="headerlink" title="不同的二叉搜索树"></a>不同的二叉搜索树</h3><p>给你一个整数 <code>n</code> ，求恰由 <code>n</code> 个节点组成且节点值从 <code>1</code> 到 <code>n</code> 互不相同的 <strong>二叉搜索树</strong> 有多少种？返回满足题意的二叉搜索树的种数。</p>
 <p><strong>示例 1：</strong></p>
-<p><img src="https://assets.leetcode.com/uploads/2021/01/18/uniquebstn3.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="/LeetCode/uniquebstn3.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
 <figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs abnf">输入：n <span class="hljs-operator">=</span> <span class="hljs-number">3</span><br>输出：<span class="hljs-number">5</span><br></code></pre></td></tr></table></figure>
 
 <blockquote>
@@ -1783,7 +1784,7 @@
 <p>除了 <code>root</code> 之外，每栋房子有且只有一个“父“房子与之相连。一番侦察之后，聪明的小偷意识到“这个地方的所有房屋的排列类似于一棵二叉树”。 如果 <strong>两个直接相连的房子在同一天晚上被打劫</strong> ，房屋将自动报警。</p>
 <p>给定二叉树的 <code>root</code> 。返回 <em><strong>在不触动警报的情况下</strong> ，小偷能够盗取的最高金额</em> 。</p>
 <p><strong>示例 1:</strong></p>
-<p><img src="https://assets.leetcode.com/uploads/2021/03/10/rob1-tree.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="/LeetCode/rob1-tree.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
 <figure class="highlight tap"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs tap">输入: root = [3,2,3,null,3,null,1]<br>输出:<span class="hljs-number"> 7 </span><br>解释: 小偷一晚能够盗取的最高金额<span class="hljs-number"> 3 </span>+<span class="hljs-number"> 3 </span>+<span class="hljs-number"> 1 </span>= 7<br></code></pre></td></tr></table></figure>
 
 <blockquote>
@@ -1793,6 +1794,31 @@
 </blockquote>
 <p>代码：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    HashMap&lt;TreeNode, Integer&gt; map = <span class="hljs-keyword">new</span> <span class="hljs-title class_">HashMap</span>&lt;&gt;();<br>    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">rob</span><span class="hljs-params">(TreeNode root)</span> &#123;<br>        <span class="hljs-keyword">if</span>(root == <span class="hljs-literal">null</span> ) <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">if</span>(root.left ==<span class="hljs-literal">null</span> &amp;&amp; root.right == <span class="hljs-literal">null</span>) <span class="hljs-keyword">return</span> root.val;<br>        <span class="hljs-keyword">if</span>(map.containsKey(root)) <span class="hljs-keyword">return</span> map.get(root);<br>        <span class="hljs-comment">// 偷父节点</span><br>        <span class="hljs-type">int</span> <span class="hljs-variable">val1</span> <span class="hljs-operator">=</span> root.val;<br>        <span class="hljs-keyword">if</span>(root.left != <span class="hljs-literal">null</span>) val1 += rob(root.left.left)+rob(root.left.right); <br>        <span class="hljs-keyword">if</span>(root.right != <span class="hljs-literal">null</span>) val1 += rob(root.right.right) + rob(root.right.left);<br>        <span class="hljs-type">int</span> <span class="hljs-variable">val2</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;<br>        <span class="hljs-comment">// 不偷父节点</span><br>        val2 += rob(root.left) + rob(root.right);<br>        map.put(root,Math.max(val1,val2));<br>        <span class="hljs-keyword">return</span> Math.max(val1,val2);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h4 id="740-删除并获得点数——打家劫舍V"><a href="#740-删除并获得点数——打家劫舍V" class="headerlink" title="740. 删除并获得点数——打家劫舍V"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/delete-and-earn/">740. 删除并获得点数</a>——打家劫舍V</h4><p>给你一个整数数组 nums ，你可以对它进行一些操作。</p>
+<p>每次操作中，选择任意一个 nums[i] ，删除它并获得 nums[i] 的点数。之后，你必须删除 所有 等于 nums[i] - 1 和 nums[i] + 1 的元素。</p>
+<p>开始你拥有 0 个点数。返回你能通过这些操作获得的最大点数。</p>
+<p>示例 ：</p>
+<figure class="highlight tap"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs tap">输入：nums = [2,2,3,3,3,4]<br>输出：9<br>解释：<br>删除<span class="hljs-number"> 3 </span>获得<span class="hljs-number"> 3 </span>个点数，接着要删除两个<span class="hljs-number"> 2 </span>和<span class="hljs-number"> 4 </span>。<br>之后，再次删除<span class="hljs-number"> 3 </span>获得<span class="hljs-number"> 3 </span>个点数，再次删除<span class="hljs-number"> 3 </span>获得<span class="hljs-number"> 3 </span>个点数。<br>总共获得<span class="hljs-number"> 9 </span>个点数。<br></code></pre></td></tr></table></figure>
+
+
+
+
+
+<blockquote>
+<p>当你选择删除<code>nums[i]</code>时，那么你就不能选择与<code>nums[i]</code>相邻的数。就是这一点把这道题和打家劫舍连在一起。</p>
+<p>我们需要构造一个新的数组，有两种方法：</p>
+<ul>
+<li>新的数组记录的是删除所有<code>nums[i]</code>得到的点数。—— cost[i] &#x3D; <code>sum(nums[i])</code></li>
+<li>新的数组记录的是<code>nums[i]</code>出现的次数。 —— cost[i] &#x3D;<code> freq(nums[i])</code></li>
+</ul>
+<p>然后就和打家劫舍一模一样。</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">deleteAndEarn</span><span class="hljs-params">(<span class="hljs-type">int</span>[] nums)</span> &#123;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">n</span> <span class="hljs-operator">=</span> nums.length;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">max</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> num:nums)&#123;<br>            max = Math.max(max,num);<br>        &#125;<br>        <span class="hljs-type">int</span>[] cost = <span class="hljs-keyword">new</span> <span class="hljs-title class_">int</span>[max+<span class="hljs-number">1</span>];<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>; i &lt; n; i++)&#123;<br>            cost[nums[i]] += nums[i];<br>        &#125;<br>        <span class="hljs-type">int</span>[] dp = <span class="hljs-keyword">new</span> <span class="hljs-title class_">int</span>[max+<span class="hljs-number">1</span>];<br>        dp[<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>;<br>        dp[<span class="hljs-number">1</span>] = cost[<span class="hljs-number">1</span>];<br>        <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> <span class="hljs-variable">i</span> <span class="hljs-operator">=</span> <span class="hljs-number">2</span>; i &lt;cost.length; i++)&#123;<br>            dp[i] = Math.max(dp[i-<span class="hljs-number">1</span>], dp[i-<span class="hljs-number">2</span>]+cost[i]);<br>        &#125;<br>        <span class="hljs-keyword">return</span> dp[max];<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+
+
 
 <h3 id="买卖股票的最佳时机"><a href="#买卖股票的最佳时机" class="headerlink" title="买卖股票的最佳时机"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/description/">买卖股票的最佳时机</a></h3><p>给定一个数组 <code>prices</code> ，它的第 <code>i</code> 个元素 <code>prices[i]</code> 表示一支给定股票第 <code>i</code> 天的价格。</p>
 <p>你只能选择 <strong>某一天</strong> 买入这只股票，并选择在 <strong>未来的某一个不同的日子</strong> 卖出该股票。设计一个算法来计算你所能获取的最大利润。</p>
@@ -2983,7 +3009,7 @@
 
 <blockquote>
 <p>分治</p>
-<img src="https://assets.leetcode-cn.com/solution-static/14/14_fig3.png" srcset="/img/loading.gif" lazyload alt="fig3" style="zoom: 33%;" />
+<img src="LeetCode/14_fig3.png" srcset="/img/loading.gif" lazyload alt="fig3" style="zoom: 33%;" />
 </blockquote>
 <p>代码：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">longestCommonPrefix</span><span class="hljs-params">(String[] strs)</span> &#123;<br>        <span class="hljs-keyword">if</span>(strs == <span class="hljs-literal">null</span> || strs.length &lt; <span class="hljs-number">1</span>)&#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;&quot;</span>;<br>        &#125;<br>        <span class="hljs-keyword">else</span>&#123;<br>            <span class="hljs-keyword">return</span> longestCommon(strs,<span class="hljs-number">0</span>,strs.length-<span class="hljs-number">1</span>);<br>        &#125;<br>    &#125;<br>    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">longestCommon</span><span class="hljs-params">(String[] strs, <span class="hljs-type">int</span> left, <span class="hljs-type">int</span> right)</span>&#123;<br>        <span class="hljs-keyword">if</span>(left == right)&#123;<br>            <span class="hljs-keyword">return</span> strs[left];<br>        &#125;<br>        <span class="hljs-keyword">else</span>&#123;<br>            <span class="hljs-type">int</span> <span class="hljs-variable">mid</span> <span class="hljs-operator">=</span> left + (right - left) / <span class="hljs-number">2</span>;<br>            <span class="hljs-type">String</span> <span class="hljs-variable">leftLong</span> <span class="hljs-operator">=</span> longestCommon(strs,left,mid);<br>            <span class="hljs-type">String</span> <span class="hljs-variable">rightLong</span> <span class="hljs-operator">=</span> longestCommon(strs,mid+<span class="hljs-number">1</span>,right);<br>            <span class="hljs-keyword">return</span> commonPreFix(leftLong,rightLong);<br>        &#125;<br>    &#125;<br>    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">commonPreFix</span><span class="hljs-params">(String prefix,String str)</span>&#123;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">len</span> <span class="hljs-operator">=</span> Math.min(prefix.length(),str.length());<br>        <span class="hljs-type">int</span> <span class="hljs-variable">flag</span> <span class="hljs-operator">=</span> <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">while</span>(flag &lt; len &amp;&amp; prefix.charAt(flag) == str.charAt(flag))&#123;<br>            flag++;<br>        &#125;<br>        <span class="hljs-keyword">return</span> str.substring(<span class="hljs-number">0</span>,flag);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
@@ -3127,7 +3153,7 @@
 <h3 id="柱状图中最大的矩形-字节hard"><a href="#柱状图中最大的矩形-字节hard" class="headerlink" title="柱状图中最大的矩形 [字节hard]"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/largest-rectangle-in-histogram/">柱状图中最大的矩形</a> [字节hard]</h3><p>给定 <em>n</em> 个非负整数，用来表示柱状图中各个柱子的高度。每个柱子彼此相邻，且宽度为 1 。</p>
 <p>求在该柱状图中，能够勾勒出来的矩形的最大面积。</p>
 <p><strong>示例一</strong>：</p>
-<p><img src="/leetcode_recod.assets/histogram.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="/LeetCode/histogram.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
 <figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs accesslog">输入：heights = <span class="hljs-string">[2,1,5,6,2,3]</span><br>输出：<span class="hljs-number">10</span><br>解释：最大的矩形为图中红色区域，面积为 <span class="hljs-number">10</span><br></code></pre></td></tr></table></figure>
 
 <blockquote>
@@ -3152,13 +3178,13 @@
 
 <h3 id="最大矩形-字节hard"><a href="#最大矩形-字节hard" class="headerlink" title="最大矩形 [字节hard]"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/maximal-rectangle/">最大矩形</a> [字节hard]</h3><p>给定一个仅包含 <code>0</code> 和 <code>1</code> 、大小为 <code>rows x cols</code> 的二维二进制矩阵，找出只包含 <code>1</code> 的最大矩形，并返回其面积。</p>
 <p><strong>示例</strong></p>
-<p><img src="/leetcode_recod.assets/maximal.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="/LeetCode/maximal.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
 <figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs prolog">输入：matrix = [[<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;0&quot;</span>,<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;0&quot;</span>,<span class="hljs-string">&quot;0&quot;</span>],[<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;0&quot;</span>,<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;1&quot;</span>],[<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;1&quot;</span>],[<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;0&quot;</span>,<span class="hljs-string">&quot;0&quot;</span>,<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;0&quot;</span>]]<br>输出：<span class="hljs-number">6</span><br>解释：最大矩形如上图所示。<br></code></pre></td></tr></table></figure>
 
 <blockquote>
 <p>思路：</p>
 <p>柱状图中最大的矩形：</p>
-<p><img src="/leetcode_recod.assets/aabb1b287134cf950aa80526806ef4025e3920d57d237c0369ed34fae83e2690-image.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<p><img src="/LeetCode/aabb1b287134cf950aa80526806ef4025e3920d57d237c0369ed34fae83e2690-image.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <p>这道题就是遍历每一层，求它的高度数组height[]然后传给上一题的函数即可。</p>
 </blockquote>
 <p>代码：</p>
@@ -3166,7 +3192,7 @@
 
 <h3 id="最大正方形-字节medium"><a href="#最大正方形-字节medium" class="headerlink" title="最大正方形 [字节medium]"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/maximal-square/">最大正方形</a> [字节medium]</h3><p>在一个由 <code>&#39;0&#39;</code> 和 <code>&#39;1&#39;</code> 组成的二维矩阵内，找到只包含 <code>&#39;1&#39;</code> 的最大正方形，并返回其面积。</p>
 <p><strong>示例：</strong></p>
-<p><img src="/leetcode_recod.assets/max1grid.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="/LeetCode/max1grid.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
 <figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs prolog">输入：matrix = [[<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;0&quot;</span>,<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;0&quot;</span>,<span class="hljs-string">&quot;0&quot;</span>],[<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;0&quot;</span>,<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;1&quot;</span>],[<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;1&quot;</span>],[<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;0&quot;</span>,<span class="hljs-string">&quot;0&quot;</span>,<span class="hljs-string">&quot;1&quot;</span>,<span class="hljs-string">&quot;0&quot;</span>]]<br>输出：<span class="hljs-number">4</span><br></code></pre></td></tr></table></figure>
 
 <blockquote>
@@ -3338,7 +3364,7 @@
 <h4 id="单词搜索-II"><a href="#单词搜索-II" class="headerlink" title="单词搜索 II"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/word-search-ii/description/">单词搜索 II</a></h4><p>给定一个 <code>m x n</code> 二维字符网格 <code>board</code> 和一个单词（字符串）列表 <code>words</code>， <em>返回所有二维网格上的单词</em> 。</p>
 <p>单词必须按照字母顺序，通过 <strong>相邻的单元格</strong> 内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母在一个单词中不允许被重复使用。</p>
 <p>示例：</p>
-<p><img src="https://assets.leetcode.com/uploads/2020/11/07/search1.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="/LeetCode/search1.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
 <figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs prolog">输入：board = [[<span class="hljs-string">&quot;o&quot;</span>,<span class="hljs-string">&quot;a&quot;</span>,<span class="hljs-string">&quot;a&quot;</span>,<span class="hljs-string">&quot;n&quot;</span>],[<span class="hljs-string">&quot;e&quot;</span>,<span class="hljs-string">&quot;t&quot;</span>,<span class="hljs-string">&quot;a&quot;</span>,<span class="hljs-string">&quot;e&quot;</span>],[<span class="hljs-string">&quot;i&quot;</span>,<span class="hljs-string">&quot;h&quot;</span>,<span class="hljs-string">&quot;k&quot;</span>,<span class="hljs-string">&quot;r&quot;</span>],[<span class="hljs-string">&quot;i&quot;</span>,<span class="hljs-string">&quot;f&quot;</span>,<span class="hljs-string">&quot;l&quot;</span>,<span class="hljs-string">&quot;v&quot;</span>]], words = [<span class="hljs-string">&quot;oath&quot;</span>,<span class="hljs-string">&quot;pea&quot;</span>,<span class="hljs-string">&quot;eat&quot;</span>,<span class="hljs-string">&quot;rain&quot;</span>]<br>输出：[<span class="hljs-string">&quot;eat&quot;</span>,<span class="hljs-string">&quot;oath&quot;</span>]<br></code></pre></td></tr></table></figure>
 
 <blockquote>
@@ -3416,7 +3442,7 @@
 
 <h3 id="从前序与中序遍历序列构造二叉树-字节medium"><a href="#从前序与中序遍历序列构造二叉树-字节medium" class="headerlink" title=" 从前序与中序遍历序列构造二叉树 [字节medium]"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/"> 从前序与中序遍历序列构造二叉树</a> [字节medium]</h3><p>给定两个整数数组 preorder 和 inorder ，其中 preorder 是二叉树的先序遍历， inorder 是同一棵树的中序遍历，请构造二叉树并返回其根节点。</p>
 <p>  示例 1:</p>
-<p><img src="https://assets.leetcode.com/uploads/2021/02/19/tree.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="/LeetCode/tree.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
 <figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs accesslog">输入: preorder = <span class="hljs-string">[3,9,20,15,7]</span>, inorder = <span class="hljs-string">[9,3,15,20,7]</span><br>输出: <span class="hljs-string">[3,9,20,null,null,15,7]</span><br></code></pre></td></tr></table></figure>
 
 <blockquote>
@@ -3447,7 +3473,7 @@
 
 <h3 id="二叉树的右视图-字节medium"><a href="#二叉树的右视图-字节medium" class="headerlink" title="二叉树的右视图  [字节medium]"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/binary-tree-right-side-view/">二叉树的右视图</a>  [字节medium]</h3><p>给定一个二叉树的 <strong>根节点</strong> <code>root</code>，想象自己站在它的右侧，按照从顶部到底部的顺序，返回从右侧所能看到的节点值。</p>
 <p><strong>示例 1:</strong></p>
-<p><img src="https://assets.leetcode.com/uploads/2021/02/14/tree.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="/LeetCode/tree2.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
 <figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs 1c">输入: [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-literal">null</span>,<span class="hljs-number">5</span>,<span class="hljs-literal">null</span>,<span class="hljs-number">4</span>]<br>输出: [<span class="hljs-number">1</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>]<br></code></pre></td></tr></table></figure>
 
 <blockquote>
@@ -3469,7 +3495,7 @@
 <h3 id="二叉树的最近公共祖先"><a href="#二叉树的最近公共祖先" class="headerlink" title="二叉树的最近公共祖先"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/">二叉树的最近公共祖先</a></h3><p>给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。</p>
 <p>百度百科中最近公共祖先的定义为：“对于有根树 T 的两个节点 p、q，最近公共祖先表示为一个节点 x，满足 x 是 p、q 的祖先且 x 的深度尽可能大（一个节点也可以是它自己的祖先）。”</p>
 <p><strong>示例：</strong></p>
-<p><img src="/leetcode_recod.assets/binarytree.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="/LeetCode/binarytree.png" srcset="/img/loading.gif" lazyload alt="img"></p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs stylus">输入：root = <span class="hljs-selector-attr">[3,5,1,6,2,0,8,null,null,7,4]</span>, <span class="hljs-selector-tag">p</span> = <span class="hljs-number">5</span>, <span class="hljs-selector-tag">q</span> = <span class="hljs-number">1</span><br>输出：<span class="hljs-number">3</span><br>解释：节点 <span class="hljs-number">5</span> 和节点 <span class="hljs-number">1</span> 的最近公共祖先是节点 <span class="hljs-number">3</span> 。<br></code></pre></td></tr></table></figure>
 
 <blockquote>
@@ -3488,7 +3514,7 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    Map&lt;TreeNode,TreeNode&gt; parent = <span class="hljs-keyword">new</span> <span class="hljs-title class_">HashMap</span>&lt;&gt;();<br>    HashSet&lt;TreeNode&gt; set = <span class="hljs-keyword">new</span> <span class="hljs-title class_">HashSet</span>&lt;&gt;();<br>    <span class="hljs-keyword">public</span> TreeNode <span class="hljs-title function_">lowestCommonAncestor</span><span class="hljs-params">(TreeNode root, TreeNode p, TreeNode q)</span> &#123;<br>        Deque&lt;TreeNode&gt; queue = <span class="hljs-keyword">new</span> <span class="hljs-title class_">ArrayDeque</span>&lt;&gt;();<br>        queue.offer(root);<br>        parent.put(root,<span class="hljs-literal">null</span>);<br>        <span class="hljs-keyword">while</span>(!queue.isEmpty())&#123;<br>            <span class="hljs-type">TreeNode</span> <span class="hljs-variable">node</span> <span class="hljs-operator">=</span> queue.poll();<br>            <span class="hljs-keyword">if</span>(node.left != <span class="hljs-literal">null</span>)&#123;<br>                parent.put(node.left,node);<br>                queue.offer(node.left);<br>            &#125;<br>            <span class="hljs-keyword">if</span>(node.right != <span class="hljs-literal">null</span>)&#123;<br>                parent.put(node.right,node);<br>                queue.offer(node.right);<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">while</span>(p!=<span class="hljs-literal">null</span>)&#123;<br>            set.add(p);<br>            p = parent.get(p);<br>        &#125;<br>        <span class="hljs-keyword">while</span>(!set.contains(q))&#123;<br>            q = parent.get(q);<br>        &#125;<br>        <span class="hljs-keyword">return</span> q;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <h3 id="二叉树的序列化与反序列化"><a href="#二叉树的序列化与反序列化" class="headerlink" title="二叉树的序列化与反序列化"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/serialize-and-deserialize-binary-tree/">二叉树的序列化与反序列化</a></h3><p><strong>示例</strong></p>
-<p><img src="/leetcode_recod.assets/serdeser.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="/LeetCode/serdeser.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
 <figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs nix">输入：<span class="hljs-attr">root</span> = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-literal">null</span>,<span class="hljs-literal">null</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>]<br>输出：[<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-literal">null</span>,<span class="hljs-literal">null</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>]<br></code></pre></td></tr></table></figure>
 
 <blockquote>
@@ -3509,7 +3535,7 @@
 <h3 id="二叉搜索树转双向链表"><a href="#二叉搜索树转双向链表" class="headerlink" title="二叉搜索树转双向链表"></a>二叉搜索树转双向链表</h3><p>代码：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-type">TreeNode</span> <span class="hljs-variable">head</span> <span class="hljs-operator">=</span> <span class="hljs-literal">null</span>;<br>    <span class="hljs-type">TreeNode</span> <span class="hljs-variable">pre</span> <span class="hljs-operator">=</span> <span class="hljs-literal">null</span>;<br>    <span class="hljs-keyword">public</span> TreeNode <span class="hljs-title function_">Convert</span><span class="hljs-params">(TreeNode pRootOfTree)</span> &#123;<br>        <span class="hljs-keyword">if</span>(pRootOfTree == <span class="hljs-literal">null</span>)&#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;<br>        &#125;<br>        Convert(pRootOfTree.left);<br>        <span class="hljs-keyword">if</span>(pre == <span class="hljs-literal">null</span>)&#123;<br>            head = pRootOfTree;<br>            pre = pRootOfTree;<br>        &#125;<span class="hljs-keyword">else</span>&#123;<br>            pre.right = pRootOfTree;<br>            pRootOfTree.left = pre;<br>            pre = pRootOfTree;<br>        &#125;<br>        Convert(pRootOfTree.right);<br>        <span class="hljs-keyword">return</span> head;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<h3 id="二叉树展开成链表"><a href="#二叉树展开成链表" class="headerlink" title="二叉树展开成链表"></a>二叉树展开成链表</h3><p><img src="/leetcode_recod.assets/flaten.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="二叉树展开成链表"><a href="#二叉树展开成链表" class="headerlink" title="二叉树展开成链表"></a>二叉树展开成链表</h3><p><img src="/LeetCode/flaten.jpg" srcset="/img/loading.gif" lazyload alt="img"></p>
 <p>代码：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Solution</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">flatten</span><span class="hljs-params">(TreeNode root)</span> &#123;<br>        <span class="hljs-keyword">while</span>(root != <span class="hljs-literal">null</span>)&#123;<br>            <span class="hljs-type">TreeNode</span> <span class="hljs-variable">p</span> <span class="hljs-operator">=</span> root.left;<br>            <span class="hljs-keyword">if</span>(p != <span class="hljs-literal">null</span>)&#123;<br>                <span class="hljs-keyword">while</span>(p.right!=<span class="hljs-literal">null</span>) p = p.right;<br>                p.right = root.right;<br>                root.right = root.left;<br>                root.left = <span class="hljs-literal">null</span>;<br>            &#125;<br>            root = root.right;<br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
@@ -3525,7 +3551,7 @@
 <h3 id="路径总和"><a href="#路径总和" class="headerlink" title="路径总和"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/path-sum/">路径总和</a></h3><p>给你二叉树的根节点 root 和一个表示目标和的整数 targetSum 。判断该树中<strong>是否存在</strong> 根节点到叶子节点 的路径，这条路径上所有节点值相加等于目标和 targetSum 。如果存在，返回 true ；否则，返回 false 。</p>
 <p>叶子节点 是指没有子节点的节点。</p>
 <p>示例：</p>
-<img src="../../../../SophomoreⅡ/算法/我要去字节.assets/pathsum1.jpg" srcset="/img/loading.gif" lazyload alt="img" style="zoom: 50%;" />
+<img src="LeetCode/pathsum1.jpg" srcset="/img/loading.gif" lazyload alt="img" style="zoom: 50%;" />
 
 <figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs nix">输入：<span class="hljs-attr">root</span> = [<span class="hljs-number">5</span>,<span class="hljs-number">4</span>,<span class="hljs-number">8</span>,<span class="hljs-number">11</span>,<span class="hljs-literal">null</span>,<span class="hljs-number">13</span>,<span class="hljs-number">4</span>,<span class="hljs-number">7</span>,<span class="hljs-number">2</span>,<span class="hljs-literal">null</span>,<span class="hljs-literal">null</span>,<span class="hljs-literal">null</span>,<span class="hljs-number">1</span>], <span class="hljs-attr">targetSum</span> = <span class="hljs-number">22</span><br>输出：<span class="hljs-literal">true</span><br>解释：等于目标和的根节点到叶节点路径如上图所示。<br></code></pre></td></tr></table></figure>
 
@@ -3541,7 +3567,7 @@
 <h3 id="路径总和-II"><a href="#路径总和-II" class="headerlink" title="路径总和 II"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/path-sum-ii/">路径总和 II</a></h3><p>给你二叉树的根节点 root 和一个整数目标和 targetSum ，找出<strong>所有</strong> 从根节点到叶子节点 路径总和等于给定目标和的路径。</p>
 <p>叶子节点 是指没有子节点的节点。</p>
 <p>示例：</p>
-<img src="../../../../SophomoreⅡ/算法/我要去字节.assets/pathsumii1.jpg" srcset="/img/loading.gif" lazyload alt="img" style="zoom:50%;" />
+<img src="LeetCode/pathsumii1.jpg" srcset="/img/loading.gif" lazyload alt="img" style="zoom:50%;" />
 
 <figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs lua">输入：root = [<span class="hljs-number">5</span>,<span class="hljs-number">4</span>,<span class="hljs-number">8</span>,<span class="hljs-number">11</span>,null,<span class="hljs-number">13</span>,<span class="hljs-number">4</span>,<span class="hljs-number">7</span>,<span class="hljs-number">2</span>,null,null,<span class="hljs-number">5</span>,<span class="hljs-number">1</span>], targetSum = <span class="hljs-number">22</span><br>输出：<span class="hljs-string">[[5,4,11,2],[5,8,4,5]]</span><br><br></code></pre></td></tr></table></figure>
 
@@ -3562,7 +3588,7 @@
 <h3 id="路径总和-III"><a href="#路径总和-III" class="headerlink" title="路径总和 III"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/path-sum-iii/">路径总和 III</a></h3><p>给定一个二叉树的根节点 root ，和一个整数 targetSum ，求该二叉树里节点值之和等于 targetSum 的 路径 的数目。</p>
 <p>路径 不需要从根节点开始，也不需要在叶子节点结束，但是路径方向必须是向下的（只能从父节点到子节点）。</p>
 <p>示例：</p>
-<img src="https://assets.leetcode.com/uploads/2021/04/09/pathsum3-1-tree.jpg" srcset="/img/loading.gif" lazyload alt="img" style="zoom:50%;" />
+<img src="LeetCode/pathsum3-1-tree.jpg" srcset="/img/loading.gif" lazyload alt="img" style="zoom:50%;" />
 
 <figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs nix">输入：<span class="hljs-attr">root</span> = [<span class="hljs-number">10</span>,<span class="hljs-number">5</span>,-<span class="hljs-number">3</span>,<span class="hljs-number">3</span>,<span class="hljs-number">2</span>,<span class="hljs-literal">null</span>,<span class="hljs-number">11</span>,<span class="hljs-number">3</span>,-<span class="hljs-number">2</span>,<span class="hljs-literal">null</span>,<span class="hljs-number">1</span>], <span class="hljs-attr">targetSum</span> = <span class="hljs-number">8</span><br>输出：<span class="hljs-number">3</span><br>解释：和等于 <span class="hljs-number">8</span> 的路径有 <span class="hljs-number">3</span> 条，如图所示。<br><br></code></pre></td></tr></table></figure>
 
@@ -3860,7 +3886,7 @@
 <p>给你 <code>m</code>、<code>n</code> 和 <code>indices</code> 。请你在执行完所有 <code>indices</code> 指定的增量操作后，返回矩阵中 <strong>奇数值单元格</strong> 的数目。</p>
 <p><strong>示例 1：</strong></p>
 <p><img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/11/06/e1.png" srcset="/img/loading.gif" lazyload alt="img"></p>
-<p><img src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2019/11/06/e1.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="/LeetCode/e1.png" srcset="/img/loading.gif" lazyload alt="img"></p>
 <figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs lua">输入：m = <span class="hljs-number">2</span>, n = <span class="hljs-number">3</span>, indices = <span class="hljs-string">[[0,1],[1,1]]</span><br>输出：<span class="hljs-number">6</span><br>解释：最开始的矩阵是 <span class="hljs-string">[[0,0,0],[0,0,0]]</span>。<br>第一次增量操作后得到 <span class="hljs-string">[[1,2,1],[0,1,0]]</span>。<br>最后的矩阵是 <span class="hljs-string">[[1,3,1],[1,3,1]]</span>，里面有 <span class="hljs-number">6</span> 个奇数。<br></code></pre></td></tr></table></figure>
 
 <blockquote>
@@ -3933,9 +3959,9 @@
 <p><strong>数据丢失</strong>：指在一个事务读取一个数据时，另外一个事务也访问了该数据，那么在第一个事务中修改了这个数据后，第二个事务也修改了这个数据。这样第一个事务内的修改结果就被丢失，因此称为丢失修改。 例如：事务 1 读取某表中的数据 A&#x3D;20，事务 2 也读取 A&#x3D;20，事务 1 修改 A&#x3D;A-1，事务 2 也修改 A&#x3D;A-1，最终结果 A&#x3D;19，事务 1 的修改被丢失。</p>
 <p><strong>脏读</strong>：读到了 <strong>未提交</strong>的数据。当一个事务正在访问数据并且对数据进行了修改，而这种修改还没有提交到数据库中，这时另外一个事务也访问了这个数据，然后使用了这个数据。因为这个数据是还没有提交的数据，那么另外一个事务读到的这个数据是“脏数据”，依据“脏数据”所做的操作可能是不正确的。</p>
 <p>读到了未提交的数据是很危险的，因为修改这个数据的事务可能会失败，而导致回滚，这样数据的一致性就不能保持。</p>
-<p><img src="/leetcode_recod.assets/942b5358214c819180e73399355adbb888cded.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="/LeetCode/942b5358214c819180e73399355adbb888cded.png" srcset="/img/loading.gif" lazyload alt="img"></p>
 <p><strong>不可重复读</strong>：指在一个事务内多次读同一数据。在这个事务还没有结束时，另一个事务也访问该数据。那么，在第一个事务中的两次读数据之间，由于第二个事务的修改导致第一个事务两次读取的数据可能不太一样。这就发生了在一个事务内两次读到的数据是不一样的情况，因此称为不可重复读。(<code>MVCC</code>快照读可以解决，并且可以解决快照读的幻读问题)</p>
-<img src="../../../../SophomoreⅡ/算法/我要去字节.assets/c2688293503fa8728ce21981e402a553001cc0.png" srcset="/img/loading.gif" lazyload alt="img" style="zoom:50%;" />
+<img src="LeetCode/c2688293503fa8728ce21981e402a553001cc0.png" srcset="/img/loading.gif" lazyload alt="img" style="zoom:50%;" />
 
 <ul>
 <li><p><strong>不可重复读的危害：</strong>不可重复读，是指在数据库访问中，一个事务范围内两个查询的相同记录却返回了不同数据。</p>
@@ -3980,7 +4006,7 @@
 </li>
 </ul>
 <p><strong>幻读</strong>：幻读与不可重复读类似。它发生在一个事务<code>（T1）</code>读取了几行数据，接着另一个并发事务<code>（T2）</code>插入了一些数据时。在随后的查询中，第一个事务<code>（T1）</code>就会发现多了一些原本不存在的记录，就好像发生了幻觉一样，所以称为幻读。(<code>MVCC</code>＋间歇锁可以解决)</p>
-<img src="../../../../SophomoreⅡ/算法/我要去字节.assets/13a0272842a4197f3762709aa4db6c6f3fcd9f.png" srcset="/img/loading.gif" lazyload alt="img" style="zoom:50%;" />
+<img src="LeetCode/13a0272842a4197f3762709aa4db6c6f3fcd9f.png" srcset="/img/loading.gif" lazyload alt="img" style="zoom:50%;" />
 
 
 
@@ -3989,7 +4015,7 @@
 <p><strong>读已提交（RC）</strong>：允许读取并发事务已经提交的数据，可以阻止脏读，但是幻读或不可重复读仍有可能发生。</p>
 <p><strong>可重复读（RR）</strong>：对同一字段的多次读取结果都是一致的，除非数据是被本身事务自己所修改，可以阻止脏读和不可重复读，但幻读仍有可能发生。</p>
 <p><strong>可串行化（<code>SERIALIZABLE</code>）</strong>：最高的隔离级别，完全服从 ACID 的隔离级别。所有的事务依次逐个执行，这样事务之间就完全不可能产生干扰，也就是说，该级别可以防止脏读、不可重复读以及幻读。</p>
-<img src="../../../../SophomoreⅡ/算法/我要去字节.assets/349a80a0187cefe9a99253974e47b3e7536d6f.png" srcset="/img/loading.gif" lazyload alt="img" style="zoom:50%;" />
+<img src="LeetCode/349a80a0187cefe9a99253974e47b3e7536d6f.png" srcset="/img/loading.gif" lazyload alt="img" style="zoom:50%;" />
 
 <p> 表级锁和行级锁了解吗？有什么区别？</p>
 <p><code>MyISAM </code>仅仅支持表级锁(table-level locking)，一锁就锁整张表，这在并发写的情况下性非常差。</p>
@@ -4001,7 +4027,7 @@
 </ul>
 <h3 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h3><h4 id="主键索引"><a href="#主键索引" class="headerlink" title="主键索引"></a>主键索引</h4><p>主键索引——以主键的值来构建索引</p>
 <h4 id="主索引"><a href="#主索引" class="headerlink" title="主索引"></a>主索引</h4><p>定义：将主文件分块，每一块对应一个索引项。每个存储快的第一条记录，又称为锚记录。主索引是按照索引字段值进行排序的一个有序文件，通常建立在有序文件的基于主码的排序字段上。以<code>Mysql的MyIsam存储引擎</code>为例</p>
-<p><img src="/leetcode_recod.assets/813308fd0280b523c3397a53c5a91d7d.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="/LeetCode/813308fd0280b523c3397a53c5a91d7d.png" srcset="/img/loading.gif" lazyload alt="img"></p>
 <h4 id="非主键索引"><a href="#非主键索引" class="headerlink" title="非主键索引"></a>非主键索引</h4><p>非主键索引——以非主键值来构建索引</p>
 <h4 id="主键索引和非主键索引的区别"><a href="#主键索引和非主键索引的区别" class="headerlink" title="主键索引和非主键索引的区别"></a>主键索引和非主键索引的区别</h4><ul>
 <li>主键索引的叶子节点是存储整个行数据</li>
@@ -4013,7 +4039,7 @@
 <li>聚簇索引：将<a target="_blank" rel="noopener" href="https://cloud.tencent.com/product/cdcs?from=10680">数据存储</a>与索引放到了一块，<strong>找到索引也就找到了数据</strong></li>
 <li>非聚簇索引：将<strong>数据存储于索引</strong>分开结构，索引结构的叶子节点指向了数据的对应行，myisam通过key_buffer把索引先缓存到内存中，当需要访问数据时（通过索引访问数据），在内存中直接搜索索引，然后通过索引找到磁盘相应数据，这也就是为什么索引不在key buffer命中时，速度慢的原因</li>
 </ul>
-<p><img src="https://ask.qcloudimg.com/http-save/yehe-2823867/2q05hsflfa.jpeg" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="/LeetCode/2q05hsflfa.jpeg" srcset="/img/loading.gif" lazyload alt="img"></p>
 <h4 id="聚集索引的优点"><a href="#聚集索引的优点" class="headerlink" title="聚集索引的优点"></a>聚集索引的优点</h4><p>看上去聚簇索引的效率明显要低于非聚簇索引，因为<strong>每次使用辅助索引检索都要经过两次B+树查找</strong>，这不是多此一举吗？聚簇索引的优势在哪？</p>
 <ol>
 <li>由于<strong>行数据和叶子节点存储在一起，同一页中会有多条行数据，访问同一数据页不同行记录时，已经把页加载到了Buffer中，再次访问的时候，会在内存中完成访问</strong>，不必访问磁盘。这样<strong>主键和行数据是一起被载入内存的，找到叶子节点就可以立刻将行数据返回</strong>了，<strong>如果按照主键Id来组织数据，获得数据更快</strong>。</li>
@@ -4033,10 +4059,10 @@
 <li>B 树的叶子节点都是独立的;B+树的叶子节点有一条引用链指向与它相邻的叶子节点。</li>
 <li>B 树的检索的过程相当于对范围内的每个节点的关键字做二分查找，可能还没有到达叶子节点，检索就结束了。而 B+树的检索效率就很稳定了，任何查找都是从根节点到叶子节点的过程，叶子节点的顺序检索很明显</li>
 </ul>
-<h3 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h3><p><img src="https://guide-blog-images.oss-cn-shenzhen.aliyuncs.com/github/javaguide/01.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h3><p><img src="/LeetCode/01.png" srcset="/img/loading.gif" lazyload alt="img"></p>
 <h4 id="redo-log"><a href="#redo-log" class="headerlink" title="redo log"></a>redo log</h4><p>重做日志，是<code>Innodb</code>引擎独有的，它让<code>mysql</code>具有崩溃恢复能力。</p>
 <p>比如<code>mysql</code>实例挂了或宕机了，重启时，<code>Innodb</code>存储引擎会使用<code>redo log</code>来恢复数据，保持数据的持久性和完整性。</p>
-<h4 id="bin-log"><a href="#bin-log" class="headerlink" title="bin log"></a>bin log</h4><h4 id="undo-log"><a href="#undo-log" class="headerlink" title="undo log"></a>undo log</h4><h2 id="计网"><a href="#计网" class="headerlink" title="计网"></a>计网</h2><h3 id="TCP-三次握手和四次挥手"><a href="#TCP-三次握手和四次挥手" class="headerlink" title="TCP 三次握手和四次挥手"></a>TCP 三次握手和四次挥手</h3><p><img src="https://img-blog.csdnimg.cn/img_convert/0c9f470819684156cfdc27c682db4def.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h4 id="bin-log"><a href="#bin-log" class="headerlink" title="bin log"></a>bin log</h4><h4 id="undo-log"><a href="#undo-log" class="headerlink" title="undo log"></a>undo log</h4><h2 id="计网"><a href="#计网" class="headerlink" title="计网"></a>计网</h2><h3 id="TCP-三次握手和四次挥手"><a href="#TCP-三次握手和四次挥手" class="headerlink" title="TCP 三次握手和四次挥手"></a>TCP 三次握手和四次挥手</h3><p><img src="/LeetCode/0c9f470819684156cfdc27c682db4def.png" srcset="/img/loading.gif" lazyload alt="img"></p>
 <p><strong>为什么要三次握手：</strong></p>
 <p>三次握手的目的是建立可靠的通信信道，即确定发送方和接收方收发正常。</p>
 <p>第一次握手：Client什么都不能确认，Server确定自己接收正常， 对方发送正常。</p>
@@ -4046,7 +4072,7 @@
 <p>肯定是不行，如果改成两次握手会出现：如客户端发出连接请求，但因连接请求报文丢失而未收到确认，于是客户端再重传一次连接请求。后来收到了确认，建立了连接。数据传输完毕后，就释放了连接，客户端共发出了两个连接请求报文段，其中第一个丢失，第二个到达了服务端，但是第一个丢失的报文段只是在某些网络结点长时间滞留了，延误到连接释放以后的某个时间才到达服务端，此时服务端误认为客户端又发出一次新的连接请求，于是就向客户端发出确认报文段，同意建立连接，不采用三次握手，只要服务端发出确认，就建立新的连接了，此时客户端忽略服务端发来的确认，也不发送数据，则服务端一致等待客户端发送数据，浪费资源。</p>
 <p><strong>第二次握手传回了ACK，为啥还要传SYN</strong></p>
 <p>接收端传回发送端所发送的 ACK 是为了告诉客户端，我接收到的信息确实就是你所发送的信号了，这表明从客户端到服务端的通信是正常的。而回传 SYN 则是为了建立并确认从服务端到客户端的通信。</p>
-<img src="https://camo.githubusercontent.com/790654187401ebbe3f8b7b5c25abc4e234b13a5fde546963d201e2092e964a25/68747470733a2f2f63732d6e6f7465732d313235363130393739362e636f732e61702d6775616e677a686f752e6d7971636c6f75642e636f6d2f66383761666537322d633264662d346331322d616330332d3962386435383161386166382e6a7067" srcset="/img/loading.gif" lazyload alt="img" style="zoom:67%;" />
+<img src="LeetCode/68747470733a2f2f63732d6e6f7465732d313235363130393739362e636f732e61702d6775616e677a686f752e6d7971636c6f75642e636f6d2f66383761666537322d633264662d346331322d616330332d3962386435383161386166382e6a7067" srcset="/img/loading.gif" lazyload alt="img" style="zoom:67%;" />
 
 <p>以下描述不讨论序号和确认号，因为序号和确认号的规则比较简单。并且不讨论 ACK，因为 ACK 在连接建立之后都为 1。</p>
 <ul>
@@ -4096,7 +4122,7 @@
 <p>2.TCP是一种可靠连接，保证了数据的准确性。</p>
 <p>域名解析时使用UDP协议：</p>
 <p>客户端向DNS服务器查询域名，一般返回的内容都不超过512字节，用UDP传输即可。不用经过三次握手，这样DNS服务器负载更低，响应更快。理论上说，客户端也可以指定向DNS服务器查询时用TCP，但事实上，很多DNS服务器进行配置的时候，仅支持UDP查询包。</p>
-<h3 id="HTTP状态码"><a href="#HTTP状态码" class="headerlink" title="HTTP状态码"></a>HTTP状态码</h3><p><img src="https://my-blog-to-use.oss-cn-beijing.aliyuncs.com/2019/7/%E7%8A%B6%E6%80%81%E7%A0%81.png" srcset="/img/loading.gif" lazyload alt="状态码"></p>
+<h3 id="HTTP状态码"><a href="#HTTP状态码" class="headerlink" title="HTTP状态码"></a>HTTP状态码</h3><p><img src="/LeetCode/%E7%8A%B6%E6%80%81%E7%A0%81.png" srcset="/img/loading.gif" lazyload alt="状态码"></p>
 <p>常见：</p>
 <ul>
 <li>200 成功</li>
@@ -4154,7 +4180,7 @@
 <li><strong>根本原因就是客户端不知道获取的公钥是不是权威的，或者是不是对应服务器的</strong></li>
 </ul>
 <h4 id="ssl需要几次握手，如何优化"><a href="#ssl需要几次握手，如何优化" class="headerlink" title="ssl需要几次握手，如何优化"></a>ssl需要几次握手，如何优化</h4><p>在HTTPS建立前，SSL需要进行 <strong>四次</strong>握手：</p>
-<p><img src="/leetcode_recod.assets/603212-d82f0ca8d86acf1f.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p><img src="/LeetCode/603212-d82f0ca8d86acf1f.png" srcset="/img/loading.gif" lazyload alt="img"></p>
 <p>1、客户端请求建立SSL链接，并向服务端发送一个随机数–Client random和客户端支持的加密方法，比如RSA公钥加密，此时是明文传输。</p>
 <p>2、服务端回复一种客户端支持的加密方法、一个随机数–Server random、授信的服务器证书和非对称加密的公钥。</p>
 <p>3、客户端收到服务端的回复后利用服务端的公钥，加上新的随机数–Premaster secret 通过服务端下发的公钥及加密方法进行加密，发送给服务器。</p>
@@ -4169,6 +4195,13 @@
               <div class="post-metas my-3">
   
   
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E7%AE%97%E6%B3%95%EF%BC%8C%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">#算法，数据结构</a>
+      
+    </div>
+  
 </div>
 
 
@@ -4178,7 +4211,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>刷题笔记</div>
-      <div>https://yodawu.github.io/2023/04/12/leetcode_recod/</div>
+      <div>https://yodawu.github.io/2023/04/14/LeetCode/</div>
     </div>
     <div class="license-meta">
       
@@ -4190,7 +4223,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年4月12日</div>
+          <div>2023年4月14日</div>
         </div>
       
       
